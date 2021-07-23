@@ -10,8 +10,7 @@ for(strOneLeterIndex = 0;strOneLeterIndex < strOne.length ; strOneLeterIndex++){
         if(strOne[strOneLeterIndex] === strTwo[strTwoLeterIndex]) array.push(strOne[strOneLeterIndex]);   
    }
 }
-
 var removeDuplicate = new Set(array)
 unCommonLetter = Array.from(removeDuplicate);
-return console.log("Common letters: " + unCommonLetter);
+return "Common letters: " + unCommonLetter;
 }
