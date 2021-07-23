@@ -4,14 +4,12 @@ function minutesToHours(number){
     var minutes = Math.round(number % 60);
     var minutesSingularOrPlural = "";
 
-    // assigh minute plueral or singular value
-    if(minutes > 1){
+    if(minutes > 1 || minutes == 0){
         minutesSingularOrPlural = "minutes";
     }
     else{
         minutesSingularOrPlural = "minute";
     }
-    // assigh hour plueral or singular value then print
-    if(number < 120) return console.log(hours.toString() + " hour, " + minutes.toString() +" "+ minutesSingularOrPlural);
-    return console.log(hours.toString() + " hours, " + minutes.toString() +" "+ minutesSingularOrPlural);   
+    if(number < 120 && number > 59) return hours + " hour, " + minutes +" "+ minutesSingularOrPlural;
+    return hours + " hours, " + minutes +" "+ minutesSingularOrPlural;   
 }
