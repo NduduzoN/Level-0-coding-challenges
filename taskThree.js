@@ -1,5 +1,3 @@
 function Hello(name){
-    console.log(name);
+    console.log("Hello " +name+ "!");
 }
-
-Hello("Andile");
