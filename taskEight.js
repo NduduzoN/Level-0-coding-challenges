@@ -1,4 +1,4 @@
-function minutesToHours(number){
+function numberToHoursAndMinutes(number){
 
     var hours = Math.trunc(number/60);
     var minutes = Math.round(number % 60);

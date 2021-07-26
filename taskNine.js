@@ -10,6 +10,6 @@ matchedVowels = word.match(regExpressionVowels);
 
 var removeDuplicated = new Set(matchedVowels);
 array = Array.from(removeDuplicated);
-return "Vowels : "+array.join(" ");
+console.log("Vowels : "+array.join(" "));
 }
 
